@@ -1,0 +1,14 @@
+{
+  "name": "livrosjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "produto.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jonas Elan",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
