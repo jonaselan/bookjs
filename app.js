@@ -1,6 +1,6 @@
-var app = require('./config/express')();
 // esses paranteses no final serve para retornar como uma função
-var routesBooks = require('./app/routes/books')(app);
+// pode-ser passar parâmetros
+var app = require('./config/express')();
 
 app.listen(3000, function(){
     console.log('servidor rodando');
