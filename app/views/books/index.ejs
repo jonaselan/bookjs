@@ -5,16 +5,17 @@
     <title>Bookjs</title>
   </head>
   <body>
-    <table>
+    <table style="border: 1px solid black">
       <tr>
           <th>id</th>
           <th>nome</th>
       </tr>
-      <tr>
-        <td>1</td>
-        <td>livro1</td>
-      </tr>
-
+        <% books.forEach(function(book) { %>
+          <tr>
+            <td><%= book.id %></td>
+            <td><%= book.name %></td>
+            </tr>
+        <% }); %>
     </table>
   </body>
 </html>
