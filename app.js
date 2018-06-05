@@ -1,9 +1,6 @@
 var app = require('./config/express')();
-
-app.get('/livros', function(req, res){ // primeira rota
-  res.render('books/index');
-  // res.send('books/index');
-});
+// esses paranteses no final serve para retornar como uma função
+var routesBooks = require('./app/routes/books')(app);
 
 app.listen(3000, function(){
     console.log('servidor rodando');
