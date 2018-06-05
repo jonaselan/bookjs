@@ -1,8 +1,4 @@
-var express = require('express');
-var app = express(); // representa o express
-
-// definir variaveis dentro do express e que passa peli sistema inteiro
-app.set('view engine', 'ejs');
+var app = require('./config/express')();
 
 app.get('/livros', function(req, res){ // primeira rota
   res.render('books/index');
